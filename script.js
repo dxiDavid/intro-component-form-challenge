@@ -113,8 +113,6 @@ function isValidPassword(password){
 	return lowercasePattern.test(password) && uppercasePattern.test(password) && numberPattern.test(password) && specialCharPattern.test(password);
 }
 
-
-
 function shake(error){
 	error.classList.add("shake");
 	setTimeout(() => {error.classList.remove("shake")}, 300)
